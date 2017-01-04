@@ -93,5 +93,79 @@
             android:textStyle="normal|bold"
             android:padding="5dp"
             android:background="#824df333" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="1"
+            android:id="@+id/editText2"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:padding="5dp"
+            android:background="#824df333" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="1"
+            android:id="@+id/editText3"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:padding="5dp"
+            android:background="#824df333" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="1"
+            android:id="@+id/editText4"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:padding="5dp"
+            android:background="#824df333" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="1"
+            android:id="@+id/editText5"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:padding="5dp"
+            android:background="#824df333" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="1"
+            android:id="@+id/editText6"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:padding="5dp"
+            android:background="#824df333" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="1"
+            android:id="@+id/editText7"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:padding="5dp"
+            android:background="#824df333" />
+
+
+
+
+
+
+
+
     </RelativeLayout>
 </RelativeLayout>
