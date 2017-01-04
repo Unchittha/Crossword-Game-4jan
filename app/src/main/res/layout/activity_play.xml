@@ -83,7 +83,8 @@
         android:layout_width="300dp"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/button3"
-        android:layout_height="250dp">
+        android:layout_height="250dp"
+        android:background="@drawable/eee">
 
         <EditText
             android:layout_width="wrap_content"
@@ -94,9 +95,9 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="#824df333"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="50dp" />
+            android:background="?attr/colorBackgroundFloating"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="62dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -107,9 +108,10 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="#824df333"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="105dp" />
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="120dp"
+            android:elevation="2dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -120,9 +122,12 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="#824df333"
-            android:layout_marginTop="105dp"
-            android:layout_marginLeft="120dp" />
+            android:background="?attr/colorBackgroundFloating"
+            android:layout_alignBaseline="@+id/editText4"
+            android:layout_alignBottom="@+id/editText4"
+            android:layout_alignLeft="@+id/editText7"
+            android:layout_alignStart="@+id/editText7"
+            android:layout_marginTop="125dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -133,9 +138,9 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="#824df333"
-            android:layout_marginTop="105dp"
-            android:layout_marginLeft="170dp" />
+            android:background="?attr/colorBackgroundFloating"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="145dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -146,9 +151,9 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="#824df333"
-            android:layout_marginTop="105dp"
-            android:layout_marginLeft="220dp" />
+            android:background="?attr/colorBackgroundFloating"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="177dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -159,11 +164,11 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="#824df333"
+            android:background="?attr/colorBackgroundFloating"
             android:layout_below="@+id/editText2"
             android:layout_alignLeft="@+id/editText3"
             android:layout_alignStart="@+id/editText3"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="15dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -174,9 +179,9 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="#824df333"
-            android:layout_marginTop="215dp"
-            android:layout_marginLeft="120dp" />
+            android:background="?attr/colorBackgroundFloating"
+            android:layout_marginTop="237dp"
+            android:layout_marginLeft="110dp" />
 
 
     </RelativeLayout>
