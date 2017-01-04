@@ -19,7 +19,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private String[][] vocapStrings;    // โจทย์
     private EditText[] editTexts = new EditText[7];
     private String[] strings = new String[7];
-    private String answer1String = null, answer2String = null;
+    private String[] answerStrings = new String[2];
+    private boolean[] booleen = new boolean[]{false, false};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,11 +88,21 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
                 }   //for
 
-                answer1String = strings[0] + strings[2] + strings[5] + strings[6];
-                answer2String = strings[1] + strings[2] + strings[3] + strings[4];
+                answerStrings[0] = strings[0] + strings[2] + strings[5] + strings[6];
+                answerStrings[1] = strings[1] + strings[2] + strings[3] + strings[4];
 
-                Log.d(tag, "answer1 ==> " + answer1String);
-                Log.d(tag, "answer2 ==> " + answer2String);
+                Log.d(tag, "answer1 ==> " + answerStrings[0]);
+                Log.d(tag, "answer2 ==> " + answerStrings[1]);
+
+                if (answerStrings[0].equals(vocapStrings[timesAnInt][0])) {
+                    Log.d(tag, "answer1 true");
+                    booleen[0] = true;
+                }
+
+                if (answerStrings[1].equals(vocapStrings[timesAnInt][1])) {
+                    Log.d(tag, "answer2 true");
+                    booleen[1] = true;
+                }
 
 
                 break;
