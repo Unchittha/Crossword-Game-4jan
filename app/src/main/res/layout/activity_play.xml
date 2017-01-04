@@ -10,26 +10,88 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="rtc.patcharee.unchittha.crosswordgame.PlayActivity">
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="?android:attr/textColorHighlightInverse" />
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/radWord">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linWord">
+
+            <Button
+                android:text="Word 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="Word 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linWord">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:text="Answer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true" />
 
-        <TextView
-            android:text="TextView"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radWord"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:maxLength="1"
+            android:id="@+id/editText"
             android:textSize="24sp"
-            android:textStyle="normal|bold" />
-
-        <Button
-            android:text="@string/label1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button"
-            android:layout_weight="1" />
-
-    </LinearLayout>
+            android:textStyle="normal|bold"
+            android:padding="5dp"
+            android:background="#824df333" />
+    </RelativeLayout>
 </RelativeLayout>
