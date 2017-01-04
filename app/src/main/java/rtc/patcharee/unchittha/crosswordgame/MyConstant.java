@@ -14,11 +14,11 @@ public class MyConstant {
 
         vocapStrings = new String[4][2];
         vocapStrings[0][0] = "1234";
-        vocapStrings[1][0] = "10";
+        vocapStrings[1][0] = "2222";
         vocapStrings[2][0] = "20";
         vocapStrings[3][0] = "30";
         vocapStrings[0][1] = "3210";
-        vocapStrings[1][1] = "11";
+        vocapStrings[1][1] = "3233";
         vocapStrings[2][1] = "21";
         vocapStrings[3][1] = "31";
 

@@ -104,10 +104,29 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                     booleen[1] = true;
                 }
 
+                if (booleen[0] && booleen[1]) {
+                    //Bingo OK
+
+                    timesAnInt += 1;
+                    Log.d(tag, "timeAnInt ==> " + timesAnInt);
+                    clearEdittext();
+
+
+                } else {
+                }
+
 
                 break;
         }   // switch
 
     }   // onClick
+
+    private void clearEdittext() {
+
+        for (int i=0;i<editTexts.length;i++) {
+            editTexts[i].setText("");
+        }
+
+    }
 
 }   // Main Class
