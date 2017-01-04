@@ -13,7 +13,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     //Explicit
     private MyConstant myConstant;
     private Button word1Button, word2Button, answerButton;
-    private TextView wordTextView;
+    private TextView wordTextView, levelTextView;
     private int timesAnInt = 0; // หมายถึงข้อ
     private String[][] wordStrings; // Content ของคำใบ้
     private String[][] vocapStrings;    // โจทย์
@@ -50,6 +50,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         wordStrings = myConstant.getWordStrings();
         wordTextView.setText(wordStrings[timesAnInt][0]);
         vocapStrings = myConstant.getVocapStrings();
+        levelTextView.setText("Level = 1");
 
     }
 
@@ -65,6 +66,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         for (int i = 0; i < editTexts.length; i++) {
             editTexts[i] = (EditText) findViewById(idInts[i]);
         }   // for
+
+        levelTextView = (TextView) findViewById(R.id.textView2);
 
     }   //bind Widget
 
@@ -110,6 +113,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                     timesAnInt += 1;
                     Log.d(tag, "timeAnInt ==> " + timesAnInt);
                     clearEdittext();
+                    levelTextView.setText("Level = " + Integer.toString(timesAnInt +1));
 
 
                 } else {
