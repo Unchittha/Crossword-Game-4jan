@@ -8,6 +8,22 @@ public class MyConstant {
 
     //Explicit
     private String[][] wordStrings;
+    private String[][] vocapStrings;
+
+    public String[][] getVocapStrings() {
+
+        vocapStrings = new String[4][2];
+        vocapStrings[0][0] = "00";
+        vocapStrings[1][0] = "10";
+        vocapStrings[2][0] = "20";
+        vocapStrings[3][0] = "30";
+        vocapStrings[0][1] = "01";
+        vocapStrings[1][1] = "11";
+        vocapStrings[2][1] = "21";
+        vocapStrings[3][1] = "31";
+
+        return vocapStrings;
+    }
 
     public String[][] getWordStrings() {
 
