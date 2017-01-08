@@ -28,11 +28,11 @@ public class MyConstant {
     public String[][] getWordStrings() {
 
         wordStrings = new String[4][2];
-        wordStrings[0][0] = "00";
+        wordStrings[0][0] = "ปู";
         wordStrings[1][0] = "10";
         wordStrings[2][0] = "20";
         wordStrings[3][0] = "30";
-        wordStrings[0][1] = "01";
+        wordStrings[0][1] = "ปลา";
         wordStrings[1][1] = "11";
         wordStrings[2][1] = "21";
         wordStrings[3][1] = "31";

@@ -17,13 +17,13 @@
         android:id="@+id/textView2"
         android:textSize="24sp"
         android:textStyle="normal|bold"
-        android:textColor="?android:attr/textColorHighlightInverse" />
+        android:textColor="@android:color/holo_red_light" />
 
     <RelativeLayout
-        android:layout_width="250dp"
         android:layout_height="200dp"
         android:layout_alignParentRight="true"
-        android:id="@+id/radWord">
+        android:id="@+id/radWord"
+        android:layout_width="200dp">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -49,9 +49,11 @@
         </LinearLayout>
 
         <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@+id/linWord">
+            android:layout_above="@+id/linWord"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="200dp"
+            android:layout_height="70dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -71,10 +73,11 @@
 
     <Button
         android:text="Answer"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button3"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_width="310dp"
+        android:layout_centerHorizontal="true" />
 
     <RelativeLayout
         android:layout_below="@+id/radWord"
@@ -83,8 +86,8 @@
         android:layout_width="300dp"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/button3"
-        android:layout_height="250dp"
-        android:background="@drawable/eee">
+        android:background="@drawable/gameone"
+        android:layout_height="300dp">
 
         <EditText
             android:layout_width="wrap_content"
@@ -95,9 +98,9 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="?attr/colorBackgroundFloating"
-            android:layout_marginLeft="108dp"
-            android:layout_marginTop="62dp" />
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="109dp"
+            android:layout_marginTop="33dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -109,8 +112,8 @@
             android:textStyle="normal|bold"
             android:padding="5dp"
             android:background="@android:color/transparent"
-            android:layout_marginLeft="72dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="109dp"
             android:elevation="2dp" />
 
         <EditText
@@ -122,12 +125,9 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="?attr/colorBackgroundFloating"
-            android:layout_alignBaseline="@+id/editText4"
-            android:layout_alignBottom="@+id/editText4"
-            android:layout_alignLeft="@+id/editText7"
-            android:layout_alignStart="@+id/editText7"
-            android:layout_marginTop="125dp" />
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="109dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -138,9 +138,9 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="?attr/colorBackgroundFloating"
-            android:layout_marginTop="120dp"
-            android:layout_marginLeft="145dp" />
+            android:background="@android:color/transparent"
+            android:layout_marginTop="109dp"
+            android:layout_marginLeft="162dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -151,9 +151,9 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="?attr/colorBackgroundFloating"
-            android:layout_marginTop="120dp"
-            android:layout_marginLeft="177dp" />
+            android:background="@android:color/transparent"
+            android:layout_marginTop="109dp"
+            android:layout_marginLeft="220dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -164,11 +164,9 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="?attr/colorBackgroundFloating"
-            android:layout_below="@+id/editText2"
-            android:layout_alignLeft="@+id/editText3"
-            android:layout_alignStart="@+id/editText3"
-            android:layout_marginTop="15dp" />
+            android:background="@android:color/transparent"
+            android:layout_marginTop="184dp"
+            android:layout_marginLeft="108dp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -179,9 +177,9 @@
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:padding="5dp"
-            android:background="?attr/colorBackgroundFloating"
-            android:layout_marginTop="237dp"
-            android:layout_marginLeft="110dp" />
+            android:background="@android:color/transparent"
+            android:layout_marginTop="259dp"
+            android:layout_marginLeft="108dp" />
 
 
     </RelativeLayout>
