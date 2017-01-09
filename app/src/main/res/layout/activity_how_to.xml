@@ -13,12 +13,12 @@
     android:background="@drawable/bg1">
 
     <ImageView
-        android:layout_width="120dp"
         android:layout_height="120dp"
         app:srcCompat="@drawable/play_blue"
         android:id="@+id/imageView2"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_width="100dp" />
 
     <ScrollView
         android:layout_width="match_parent"
