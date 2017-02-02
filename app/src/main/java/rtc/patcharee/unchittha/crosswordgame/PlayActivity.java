@@ -86,6 +86,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button3:
 
+                Log.d("2febV1", "Click Andwer");
+
                 for (int i = 0; i < strings.length; i++) {
                     strings[i] = editTexts[i].getText().toString().trim();
 
@@ -117,6 +119,9 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
 
                 } else {
+                    Log.d("2febV1", "คำตอบผิด");
+                    MyAlert myAlert = new MyAlert(this);
+                    myAlert.myDialog("คำตอบผิด", "ลองใหม่ คำตอบผิดคะ");
                 }
 
 
