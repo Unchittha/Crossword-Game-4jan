@@ -14,13 +14,13 @@ public class MyConstant {
 
         vocapStrings = new String[4][2];
         vocapStrings[0][0] = "clam";
-        vocapStrings[1][0] = "2222";
-        vocapStrings[2][0] = "3333";
-        vocapStrings[3][0] = "4444";
+        vocapStrings[1][0] = "bear";
+        vocapStrings[2][0] = "goat";
+        vocapStrings[3][0] = "kiwi";
         vocapStrings[0][1] = "slug";
-        vocapStrings[1][1] = "3233";
-        vocapStrings[2][1] = "4344";
-        vocapStrings[3][1] = "5455";
+        vocapStrings[1][1] = "deer";
+        vocapStrings[2][1] = "cock";
+        vocapStrings[3][1] = "lime";
 
         return vocapStrings;
     }
@@ -29,13 +29,13 @@ public class MyConstant {
 
         wordStrings = new String[4][2];
         wordStrings[0][0] = "หอยทาก";
-        wordStrings[1][0] = "10";
-        wordStrings[2][0] = "20";
-        wordStrings[3][0] = "30";
+        wordStrings[1][0] = "หมี";
+        wordStrings[2][0] = "แพะ";
+        wordStrings[3][0] = "กีวี่";
         wordStrings[0][1] = "หอยกาบ";
-        wordStrings[1][1] = "11";
-        wordStrings[2][1] = "21";
-        wordStrings[3][1] = "31";
+        wordStrings[1][1] = "กวาง";
+        wordStrings[2][1] = "ไก่ตัวผู้";
+        wordStrings[3][1] = "มะนาว";
 
         return wordStrings;
     }
