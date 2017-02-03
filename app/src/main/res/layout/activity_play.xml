@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="rtc.patcharee.unchittha.crosswordgame.PlayActivity"
-    android:background="#e4d7f5">
+    android:background="@drawable/bgg">
 
     <TextView
         android:text="TextView"
@@ -18,7 +18,7 @@
         android:id="@+id/textView2"
         android:textSize="24sp"
         android:textStyle="normal|bold"
-        android:textColor="@android:color/holo_red_light" />
+        android:textColor="@android:color/holo_red_dark" />
 
     <RelativeLayout
         android:layout_alignParentRight="true"
@@ -72,21 +72,13 @@
         </ScrollView>
     </RelativeLayout>
 
-    <Button
-        android:text="Answer"
-        android:layout_height="wrap_content"
-        android:id="@+id/button3"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_width="310dp" />
-
     <RelativeLayout
         android:layout_below="@+id/radWord"
 
 
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/button3"
-        android:background="@drawable/lv1"
+        android:background="@drawable/game1"
         android:layout_height="250dp"
         android:layout_width="300dp">
 
@@ -184,4 +176,12 @@
 
 
     </RelativeLayout>
+
+    <Button
+        android:text="Answer"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_width="310dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
