@@ -1,11 +1,13 @@
 package rtc.patcharee.unchittha.crosswordgame;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class PlayActivity extends AppCompatActivity implements View.OnClickListener {
@@ -21,6 +23,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private String[] strings = new String[7];
     private String[] answerStrings = new String[2];
     private boolean[] booleen = new boolean[]{false, false};
+    private RelativeLayout relativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +71,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         }   // for
 
         levelTextView = (TextView) findViewById(R.id.textView2);
+        relativeLayout = (RelativeLayout) findViewById(R.id.relPlay);
 
     }   //bind Widget
 
@@ -84,6 +88,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button2:
                 wordTextView.setText(wordStrings[timesAnInt][1]);
                 break;
+
             case R.id.button3:
 
                 Log.d("2febV1", "Click Answer");
@@ -115,10 +120,16 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                     timesAnInt += 1;
                     Log.d(tag, "timeAnInt ==> " + timesAnInt);
                     clearEdittext();
-                    levelTextView.setText("Level = " + Integer.toString(timesAnInt +1));
+                    levelTextView.setText("Level = " + Integer.toString(timesAnInt + 1));
+
+                    int[] ints = new int[]{R.drawable.lv1, R.drawable.lv2, R.drawable.lv3};
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                        relativeLayout.setBackground(getResources().getDrawable(ints[timesAnInt]));
+                    }
 
 
                 } else {
+
                     Log.d("2febV1", "คำตอบผิด");
                     MyAlert myAlert = new MyAlert(this);
                     myAlert.myDialog("คำตอบผิด", "ลองใหม่ คำตอบผิดค่ะ");
@@ -126,6 +137,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
 
                 break;
+
+
         }   // switch
 
     }   // onClick
