@@ -98,8 +98,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
                 }   //for
 
-                answerStrings[0] = strings[0] + strings[2] + strings[5] + strings[6];
-                answerStrings[1] = strings[1] + strings[2] + strings[3] + strings[4];
+                answerStrings[0] = strings[0] + strings[2] + strings[5] + strings[6] ;
+                answerStrings[1] = strings[1] + strings[2] + strings[3] + strings[4] ;
 
                 Log.d(tag, "answer1 ==> " + answerStrings[0]);
                 Log.d(tag, "answer2 ==> " + answerStrings[1]);
@@ -121,7 +121,13 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                     Log.d(tag, "timeAnInt ==> " + timesAnInt);
                     clearEdittext();
                     levelTextView.setText("Level = " + Integer.toString(timesAnInt + 1));
-                    int[] ints = new int[]{R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1};
+                    int[] ints = new int[]{R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1};
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                         relativeLayout.setBackground(getResources().getDrawable(ints[timesAnInt]));
                     }
