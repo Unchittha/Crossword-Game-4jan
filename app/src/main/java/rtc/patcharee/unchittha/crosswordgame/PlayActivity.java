@@ -127,7 +127,9 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                             R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
                             R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
                             R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
-                            R.drawable.game1, R.drawable.game1};
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1};
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                         relativeLayout.setBackground(getResources().getDrawable(ints[timesAnInt]));
                     }

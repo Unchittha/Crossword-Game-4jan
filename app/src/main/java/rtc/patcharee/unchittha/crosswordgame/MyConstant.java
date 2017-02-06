@@ -12,7 +12,7 @@ public class MyConstant {
 
     public String[][] getVocapStrings() {
 
-        vocapStrings = new String[30][2];
+        vocapStrings = new String[40][2];
         vocapStrings[0][0] = "cave";
         vocapStrings[1][0] = "bear";
         vocapStrings[2][0] = "goat";
@@ -43,6 +43,16 @@ public class MyConstant {
         vocapStrings[27][0] = "week";
         vocapStrings[28][0] = "walk";
         vocapStrings[29][0] = "swim";
+        vocapStrings[30][0] = "sock";
+        vocapStrings[31][0] = "taxi";
+        vocapStrings[32][0] = "work";
+        vocapStrings[33][0] = "sale";
+        vocapStrings[34][0] = "five";
+        vocapStrings[35][0] = "auto";
+        vocapStrings[36][0] = "high";
+        vocapStrings[37][0] = "long";
+        vocapStrings[38][0] = "salt";
+        vocapStrings[39][0] = "room";
         vocapStrings[0][1] = "lake";
         vocapStrings[1][1] = "deer";
         vocapStrings[2][1] = "cock";
@@ -73,13 +83,23 @@ public class MyConstant {
         vocapStrings[27][1] = "year";
         vocapStrings[28][1] = "talk";
         vocapStrings[29][1] = "twin";
+        vocapStrings[30][1] = "soap";
+        vocapStrings[31][1] = "wall";
+        vocapStrings[32][1] = "gold";
+        vocapStrings[33][1] = "tall";
+        vocapStrings[34][1] = "gift";
+        vocapStrings[35][1] = "burn";
+        vocapStrings[36][1] = "wide";
+        vocapStrings[37][1] = "home";
+        vocapStrings[38][1] = "date";
+        vocapStrings[39][1] = "copy";
 
         return vocapStrings;
     }
 
     public String[][] getWordStrings() {
 
-        wordStrings = new String[30][2];
+        wordStrings = new String[40][2];
         wordStrings[0][0] = "ถ้ำ";
         wordStrings[1][0] = "หมี";
         wordStrings[2][0] = "แพะ";
@@ -110,6 +130,16 @@ public class MyConstant {
         wordStrings[27][0] = "สัปดาห์";
         wordStrings[28][0] = "เดิน";
         wordStrings[29][0] = "ว่ายน้ำ";
+        wordStrings[30][0] = "ถุงเท้า";
+        wordStrings[31][0] = "รถแท็กซี่";
+        wordStrings[32][0] = "ทำงาน";
+        wordStrings[33][0] = "ขาย";
+        wordStrings[34][0] = "เลขห้า";
+        wordStrings[35][0] = "อัตโนมัติ";
+        wordStrings[36][0] = "สูง";
+        wordStrings[37][0] = "ยาว";
+        wordStrings[38][0] = "เกลือ";
+        wordStrings[39][0] = "ห้อง";
         wordStrings[0][1] = "ทะเลสาบ";
         wordStrings[1][1] = "กวาง";
         wordStrings[2][1] = "ไก่ตัวผู้";
@@ -140,6 +170,16 @@ public class MyConstant {
         wordStrings[27][1] = "ปี";
         wordStrings[28][1] = "พูดคุย";
         wordStrings[29][1] = "ฝาแฝด";
+        wordStrings[30][1] = "สบู่";
+        wordStrings[31][1] = "กำแพง";
+        wordStrings[32][1] = "สีทอง";
+        wordStrings[33][1] = "สูง";
+        wordStrings[34][1] = "ให้";
+        wordStrings[35][1] = "เผา";
+        wordStrings[36][1] = "กว้าง";
+        wordStrings[37][1] = "บ้าน";
+        wordStrings[38][1] = "วันที่";
+        wordStrings[39][1] = "คัดลอก";
 
         return wordStrings;
     }
