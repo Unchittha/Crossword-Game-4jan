@@ -1,7 +1,9 @@
 package rtc.patcharee.unchittha.crosswordgame;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -22,7 +24,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private EditText[] editTexts = new EditText[7];
     private String[] strings = new String[7];
     private String[] answerStrings = new String[2];
-    private boolean[] booleen = new boolean[]{false, false};
+    private boolean[] booleen = new boolean[]{false,false};
+    private int[] answerInts;
     private RelativeLayout relativeLayout;
 
     @Override
@@ -121,7 +124,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                     Log.d(tag, "timeAnInt ==> " + timesAnInt);
                     clearEdittext();
                     levelTextView.setText("Level = " + Integer.toString(timesAnInt + 1));
-                    int[] ints = new int[]{R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                    int[] ints = new int[]{R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
                             R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
                             R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
                             R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
@@ -129,7 +132,23 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                             R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
                             R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
                             R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
-                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1};
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
+                            R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,};
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                         relativeLayout.setBackground(getResources().getDrawable(ints[timesAnInt]));
                     }
@@ -138,9 +157,10 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 } else {
 
                     Log.d("2febV1", "คำตอบผิด");
-                    MyAlert myAlert = new MyAlert(this);
-                    myAlert.myDialog("คำตอบผิด", "ลองใหม่ คำตอบผิดค่ะ");
+                    MyAlert myAlert = new MyAlert(PlayActivity.this);
+                    myAlert.myDialog("คำตอบผิด", "ลองใหม่ คำตอบผิดค่ะ") ;
                 }
+
 
 
                 break;

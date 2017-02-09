@@ -22,15 +22,14 @@
         tools:ignore="HardcodedText" />
 
     <RelativeLayout
-        android:layout_below="@+id/radWord"
 
 
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/button3"
         android:background="@drawable/game1"
-        android:layout_height="250dp"
-        android:layout_width="300dp"
-        android:id="@+id/relPlay">
+        android:layout_width="wrap_content"
+        android:id="@+id/relPlay"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp">
 
         <EditText
             android:layout_height="wrap_content"
@@ -41,13 +40,12 @@
             android:textStyle="normal|bold"
             android:padding="5dp"
             android:background="@android:color/transparent"
-            android:layout_marginLeft="116dp"
-            android:layout_marginTop="29dp"
-            android:layout_width="25dp"
-            tools:ignore="RtlHardcoded" />
+            android:layout_marginLeft="112dp"
+            android:layout_marginTop="23dp"
+            tools:ignore="RtlHardcoded"
+            android:layout_width="30dp" />
 
         <EditText
-            android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:maxLength="1"
@@ -56,13 +54,13 @@
             android:textStyle="normal|bold"
             android:padding="5dp"
             android:background="@android:color/transparent"
-            android:layout_marginLeft="63dp"
-            android:layout_marginTop="107dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="94dp"
             android:elevation="2dp"
-            tools:ignore="RtlHardcoded,UnusedAttribute" />
+            tools:ignore="RtlHardcoded,UnusedAttribute"
+            android:layout_width="30dp" />
 
         <EditText
-            android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:maxLength="1"
@@ -71,12 +69,12 @@
             android:textStyle="normal|bold"
             android:padding="5dp"
             android:background="@android:color/transparent"
-            android:layout_marginLeft="116dp"
-            android:layout_marginTop="107dp"
-            tools:ignore="RtlHardcoded" />
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="94dp"
+            tools:ignore="RtlHardcoded"
+            android:layout_width="30dp" />
 
         <EditText
-            android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:maxLength="1"
@@ -85,12 +83,12 @@
             android:textStyle="normal|bold"
             android:padding="5dp"
             android:background="@android:color/transparent"
-            android:layout_marginTop="107dp"
-            android:layout_marginLeft="167dp"
-            tools:ignore="RtlHardcoded" />
+            android:layout_marginTop="94dp"
+            android:layout_marginLeft="162dp"
+            tools:ignore="RtlHardcoded"
+            android:layout_width="30dp" />
 
         <EditText
-            android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:maxLength="1"
@@ -99,9 +97,10 @@
             android:textStyle="normal|bold"
             android:padding="5dp"
             android:background="@android:color/transparent"
-            android:layout_marginTop="107dp"
-            android:layout_marginLeft="220dp"
-            tools:ignore="RtlHardcoded" />
+            android:layout_marginTop="94dp"
+            android:layout_marginLeft="215dp"
+            tools:ignore="RtlHardcoded"
+            android:layout_width="30dp" />
 
         <EditText
             android:layout_height="wrap_content"
@@ -112,13 +111,12 @@
             android:textStyle="normal|bold"
             android:padding="5dp"
             android:background="@android:color/transparent"
-            android:layout_marginTop="185dp"
-            android:layout_marginLeft="116dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginLeft="113dp"
             tools:ignore="RtlHardcoded"
-            android:layout_width="match_parent" />
+            android:layout_width="30dp" />
 
         <EditText
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:maxLength="1"
@@ -127,9 +125,10 @@
             android:textStyle="normal|bold"
             android:padding="5dp"
             android:background="@android:color/transparent"
-            android:layout_marginTop="264dp"
-            android:layout_marginLeft="116dp"
-            tools:ignore="RtlHardcoded" />
+            android:layout_marginTop="234dp"
+            android:layout_marginLeft="113dp"
+            tools:ignore="RtlHardcoded"
+            android:layout_width="30dp" />
 
 
     </RelativeLayout>
@@ -138,18 +137,21 @@
         android:text="Answer"
         android:layout_height="wrap_content"
         android:id="@+id/button3"
-        android:layout_width="310dp"
-        android:layout_alignParentBottom="true"
+        tools:ignore="HardcodedText"
+        android:background="#b0e4e6"
+        android:layout_width="300dp"
+        android:textSize="20sp"
+        android:fontFamily="casual"
         android:layout_centerHorizontal="true"
-        tools:ignore="HardcodedText" />
+        android:layout_marginTop="500dp" />
 
     <RelativeLayout
         android:id="@+id/radWord"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentEnd="true"
+        android:layout_width="150dp"
+        android:layout_height="120dp">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -164,7 +166,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/button"
                 android:layout_weight="1"
-                tools:ignore="ButtonStyle,HardcodedText" />
+                tools:ignore="ButtonStyle,HardcodedText"
+                android:background="#cbea6e"
+                android:fontFamily="casual" />
 
             <Button
                 android:text="Word 2"
@@ -172,7 +176,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/button2"
                 android:layout_weight="1"
-                tools:ignore="ButtonStyle,HardcodedText" />
+                tools:ignore="ButtonStyle,HardcodedText"
+                android:background="#cbea6e"
+                android:fontFamily="casual" />
 
         </LinearLayout>
 
@@ -180,23 +186,24 @@
             android:layout_above="@+id/linWord"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            tools:ignore="RtlHardcoded">
+            tools:ignore="RtlHardcoded"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="15dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:text="TextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView4"
-                    android:textSize="18sp"
-                    tools:ignore="HardcodedText" />
+                    android:textSize="20sp"
+                    android:textColor="?attr/editTextColor"
+                    android:layout_marginTop="10dp" />
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>
