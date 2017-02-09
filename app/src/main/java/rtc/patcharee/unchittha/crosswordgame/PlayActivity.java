@@ -126,6 +126,9 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                     Log.d(tag, "timeAnInt ==> " + timesAnInt);
                     clearEdittext();
                     levelTextView.setText("Level = " + Integer.toString(timesAnInt + 1));
+
+                    wordTextView.setText(wordStrings[timesAnInt][0]);
+
                     int[] ints = new int[]{R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
                             R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
                             R.drawable.game1, R.drawable.game1, R.drawable.game1, R.drawable.game1,
